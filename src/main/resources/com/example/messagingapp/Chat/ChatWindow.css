@@ -1,0 +1,66 @@
+@import url("../colors.css");
+
+#window{
+    -fx-background-color: -color-dark-gray;
+}
+VBox{
+    -fx-padding: 2;
+}
+#labelBox{
+    -fx-fill-height: true;
+    -fx-spacing: 25;
+}
+
+.label{
+    -fx-font-family: Arial;
+    -fx-font-weight: bold;
+    -fx-font-size: 16;
+    -fx-padding: 5 50;
+    -fx-text-fill: -color-main;
+}
+#activeUsersLabel{
+    -fx-alignment: center;
+}
+#activeUsers{
+    -fx-background-color: -color-light-gray;
+}
+
+#chatroomLabel{
+    -fx-alignment: center;
+}
+
+#chatrooms{
+    -fx-spacing: 10;
+    -fx-padding: 5;
+}
+.chatroomContainer > .viewport{
+    -fx-background-color: -color-light-gray;
+}
+.chatroomContainer{
+    -fx-background-color: -color-light-gray;
+    -fx-background-radius: 4;
+    -fx-border-color: -color-main;
+    -fx-border-radius: 4;
+    -fx-pref-height: 300;
+}
+#vBox{
+    -fx-padding: 8;
+}
+
+#chatInput{
+    -fx-spacing: 10;
+}
+#userInput{
+    -fx-background-radius: 4;
+    -fx-background-color: -color-light-gray;
+    -fx-text-fill: white;
+    -fx-border-color: -color-main;
+    -fx-border-radius: 4;
+    -fx-pref-width: 525;
+}
+
+#sendButton{
+    -fx-background-color: -color-main;
+    -fx-text-fill: -color-text-fill;
+    -fx-background-radius: 50;
+}

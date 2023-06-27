@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox fx:id="window" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400" prefWidth="600" stylesheets="@ChatWindow.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.messagingapp.Frontend.Chat.ChatViewModel">
+    <children>
+        <VBox alignment="CENTER" VBox.vgrow="ALWAYS">
+            <children>
+                <HBox fx:id="chatrooms" VBox.vgrow="ALWAYS">
+                    <children>
+                        <VBox HBox.hgrow="ALWAYS">
+                            <children>
+                        <Label fx:id="chatroomLabel" text="Chat" />
+                        <ScrollPane prefHeight="500.0" prefWidth="600.0" styleClass="chatroomContainer">
+                           <content>
+                              <VBox fx:id="chatBox" prefWidth="570.0" />
+                           </content>
+                        </ScrollPane>
+                            </children>
+                        </VBox>
+                    </children>
+                </HBox>
+            </children>
+        </VBox>
+        <VBox VBox.vgrow="ALWAYS" fx:id="vBox">
+            <children>
+                <HBox fx:id="chatInput" VBox.vgrow="ALWAYS">
+                    <children>
+                        <TextField fx:id="userInput" VBox.vgrow="ALWAYS" onKeyReleased="#controlSendButton" onAction="#handleSubmitClick"/>
+                        <Button fx:id="sendButton" mnemonicParsing="false" onAction="#handleSubmitClick"  defaultButton="true" text="Send" HBox.hgrow="ALWAYS" />
+                    </children>
+                </HBox>
+            </children>
+        </VBox>
+    </children>
+</VBox>

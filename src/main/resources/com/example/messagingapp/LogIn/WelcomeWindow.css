@@ -1,0 +1,31 @@
+@import url("../colors.css");
+
+#window{
+    -fx-background-color: -color-dark-gray;
+    -fx-padding: 0 140;
+}
+
+#label{
+    -fx-font-weight: bold;
+    -fx-font-family: Chalkboard;
+    -fx-font-size: 20;
+    -fx-text-fill: -color-text-fill;
+}
+#usernameInput{
+    -fx-background-color: -color-light-gray;
+    -fx-text-fill: -color-text-fill;
+    -fx-background-radius: 4;
+    -fx-border-color: -color-main;
+    -fx-border-radius: 4;
+}
+#errorMessage{
+    -fx-text-fill: -color-error;
+    -fx-font-size: 10;
+    -fx-font-family: Chalkboard;
+}
+#startButton{
+    -fx-background-color: -color-main;
+    -fx-text-fill: -color-text-fill;
+    -fx-background-radius: 50;
+    -fx-cursor: pointer;
+}
