@@ -1,7 +1,3 @@
-/**
- * @author Fatjon Tusche, Anastasiia Dudrina, Dominik Ramaj, Dinghao Shi
- */
-
 package com.example.messagingapp.Backend;
 
 import java.io.BufferedReader;
@@ -58,15 +54,6 @@ class ClientHandler implements Runnable {
             System.out.println("Error" + e.getMessage());
             terminate();
         }
-    }
-
-    /**
-     * Get number of active users
-     *
-     * @return
-     */
-    public int getNumberOfUsers() {
-        return existingConnections.size();
     }
 
     /**
@@ -155,10 +142,6 @@ class ClientHandler implements Runnable {
     public void removeTCPServerThread() {
         if (existingConnections != null)
             existingConnections.remove(this);
-    }
-
-    public String getUsername() {
-        return username;
     }
 
     /**

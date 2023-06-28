@@ -1,7 +1,3 @@
-/**
- * @author Fatjon Tushe, Anatasiia Dudrina, Dinghao Shi
- */
-
 package com.example.messagingapp.Backend;
 
 import java.io.IOException;

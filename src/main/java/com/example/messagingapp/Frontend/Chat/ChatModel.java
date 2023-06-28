@@ -1,7 +1,3 @@
-/**
- * @author Florian Maurer, Fatjon Tushe, Dominik Ramaj
- */
-
 package com.example.messagingapp.Frontend.Chat;
 
 import com.example.messagingapp.Frontend.Messaging;
@@ -10,7 +6,7 @@ import javafx.beans.property.StringProperty;
 import javafx.scene.layout.VBox;
 
 public class ChatModel {
-    private StringProperty message = new SimpleStringProperty("");
+    private final StringProperty message = new SimpleStringProperty("");
 
     public void sendMessage(){
         Messaging.instance.sendMessage(message.getValue());

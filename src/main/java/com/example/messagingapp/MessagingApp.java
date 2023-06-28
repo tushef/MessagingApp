@@ -3,11 +3,9 @@ package com.example.messagingapp;
 import com.example.messagingapp.Frontend.LogIn.LoginViewModel;
 import javafx.application.Application;
 import javafx.application.Platform;
-import javafx.event.EventHandler;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
-import javafx.stage.WindowEvent;
 
 import java.io.IOException;
 import java.net.URL;
@@ -18,7 +16,7 @@ public class MessagingApp extends Application {
     private Scene scene;
 
     @Override
-    public void start(Stage mainStage) throws Exception {
+    public void start(Stage mainStage){
         try {
             URL fxmlLocation = Objects.requireNonNull(getClass().getResource("/com/example/messagingapp/LogIn/WelcomeWindow.fxml"));
             FXMLLoader fxmlLoader = new FXMLLoader(fxmlLocation);

@@ -1,8 +1,3 @@
-/**
- * @author Anastasiia Dudrina, Florian Maurer, Fatjon Tushe, Dominik Ramaj
- * API between GUI and Model.
- */
-
 package com.example.messagingapp.Frontend.LogIn;
 
 import javafx.event.ActionEvent;
@@ -22,7 +17,6 @@ import java.util.ResourceBundle;
 
 public class LoginViewModel implements Initializable {
 
-    Scene scene;
     Stage stage = new Stage();
     @FXML private Button startButton;
     @FXML private TextField usernameInput;
@@ -81,7 +75,7 @@ public class LoginViewModel implements Initializable {
                 (Objects.requireNonNull(getClass().
                         getResource("/com/example/messagingapp/Chat/Chat.fxml")));
         stage = (Stage) startButton.getScene().getWindow();
-        stage.setTitle("Chat Innige Irrwege");
+        stage.setTitle("Chat");
         stage.setScene(new Scene(root, 600, 400));
         stage.show();
     }

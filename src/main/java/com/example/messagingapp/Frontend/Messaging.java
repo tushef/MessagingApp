@@ -1,7 +1,3 @@
-/**
- * @author Dominik Ramaj, Fatjon Tushe, Florian Maurer
- */
-
 package com.example.messagingapp.Frontend;
 
 import javafx.application.Platform;

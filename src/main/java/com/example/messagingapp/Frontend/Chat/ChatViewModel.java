@@ -1,8 +1,3 @@
-/**
- * @author Florian Maurer, Fatjon Tushe, Anastasiia Dudrina, Dominik Ramaj
- * API between GUI and Model
- */
-
 package com.example.messagingapp.Frontend.Chat;
 import javafx.application.Platform;
 import javafx.event.ActionEvent;

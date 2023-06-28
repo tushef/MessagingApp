@@ -1,6 +1,3 @@
-/**
- * @author Fatjon Tushe, Dominik Ramaj
- */
 package com.example.messagingapp.Frontend.LogIn;
 
 import com.example.messagingapp.Frontend.Messaging;
