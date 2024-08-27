@@ -13,6 +13,7 @@ o It doesn’t allow for the same username in the same server.
 
 ### Usage
 Enter your username and log in: 
+
 ![image](https://github.com/user-attachments/assets/65d209e3-c335-4d66-bc71-5073370bb4c9)
 
 Afterwards try it out :)
